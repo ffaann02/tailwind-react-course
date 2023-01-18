@@ -29,11 +29,11 @@ const Navbar=()=>{
                 </div>
             </div>
             {isOpenNav?<ul className="absolute bg-zinc-200 w-full px-8">
-                <Link activeClass="active" to="Hero" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full">Home</li></Link>
-                <Link activeClass="active" to="About" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full">About</li></Link>
-                <Link activeClass="active" to="Support" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full">Support</li></Link>
-                <Link activeClass="active" to="Platforms" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full">Platforms</li></Link>
-               <Link activeClass="active" to="Pricing" spy={true} smooth={true} offset={0} duration={1000}> <li className="border b-2 border-zinc-300 w-full">Pricing</li></Link>
+                <Link activeClass="active" to="Hero" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full cursor-pointer" onClick={()=>{setIsOpenNav(prev=>!prev)}}>Home</li></Link>
+                <Link activeClass="active" to="About" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full cursor-pointer" onClick={()=>{setIsOpenNav(prev=>!prev)}}>About</li></Link>
+                <Link activeClass="active" to="Support" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full cursor-pointer" onClick={()=>{setIsOpenNav(prev=>!prev)}}>Support</li></Link>
+                <Link activeClass="active" to="Platforms" spy={true} smooth={true} offset={0} duration={1000}><li className="border b-2 border-zinc-300 w-full cursor-pointer" onClick={()=>{setIsOpenNav(prev=>!prev)}}>Platforms</li></Link>
+               <Link activeClass="active" to="Pricing" spy={true} smooth={true} offset={0} duration={1000}> <li className="border b-2 border-zinc-300 w-full cursor-pointer" onClick={()=>{setIsOpenNav(prev=>!prev)}}>Pricing</li></Link>
                 <div className="flex flex-col my-4">
                     <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">Sign In</button>
                     <button className="px-8 py-3">Sign Up</button>
